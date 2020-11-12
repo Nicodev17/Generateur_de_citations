@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+	    <meta charset="utf-8">
+	    <title> Générateur De Citations Aléatoires </title>
+	    <link rel="stylesheet" href="style/style.css"/>
+        <link rel="icon" type="image/png" href="img/bulle.png" />
+	    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+	    <script src="src/jquery-3.3.1.js"></script>
+        <script src="src/main.js"></script> 
+	</head>
+
+	<body>
+
+		<header>
+			<h1> Générateur De Citations Aléatoires </h1>
+		</header>
+
+    	<section class="container">
+
+            <!-- CHOIX DU THEME -->
+    		<article class="bloc-theme">
+    	    	<h2>Choisissez un thème de citation </h2>
+    	    	<br /><br />
+
+    	    	<div class="radio"> 
+                    <input type="radio" name="theme" value="groupe1" id="groupe1" />
+                    <label for="groupe1"> Phrases Drôles </label>
+                </div>
+    	    	<br />
+
+    	    	<div class="radio">
+                    <input type="radio" name="theme" value="groupe2" id="groupe2" />
+                    <label for="groupe2"> Personnages connus </label>
+                </div>
+			</article>
+            <!--FIN CHOIX DU THEME-->
+
+            <!-- CHOIX DU NOMBRE -->
+			<article class="bloc-nombre">
+                <h2>Choisissez le nombre de citation à générer </h2>
+				<br /><br />
+				
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="1" id="1">
+                    <label for="1"> Une </label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="2" id="2">
+                    <label for="2"> Deux </label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="3" id="3">
+                    <label for="3"> Trois </label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="4" id="4">
+                    <label for="4"> Quatre </label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="5" id="5">
+                    <label for="5"> Cinq </label>
+                </div>
+			</article>
+            <!--FIN CHOIX DU NOMBRE -->
+
+		</section>
+
+		<section class="container-2"> 
+
+            <!-- BOUTON DE GENERATION -->
+			<button class="button generer" title="Cliquer pour génerer"> Générer de nouvelles citations </button>
+	    	<br>
+
+            <!-- Liste ou apparaissent les citations -->
+            <ul class="playCitation" id="playCitation"> • Pour parler de la cacahuète pailletée il est conseillé de découper plusieurs kiwis à deux têtes ! </ul>
+            <button class="button buttonDelete" id="buttonDelete"> Supprimer les citations </button>
+
+    	</section>
+
+    	<footer>
+    		<p id="text-footer"> • Site développé par <a href="https://www.linkedin.com/in/nicolas-sartelet-28748a143/">Nicolas Sartelet </a> dans le cadre du parcours Développeur d'Application Front-end avec OpenClassrooms © • </p>
+    	</footer>
+
+        
+
+  	</body>
+
+</html>

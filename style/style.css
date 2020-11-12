@@ -1,0 +1,207 @@
+/* STYLES GÉNÉRAUX */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1f0235;
+	min-height: 90vh;
+}
+
+h1 {
+	color: #0bf6e1;
+	font-size: 35px;
+	font-family: 'Monoton', cursive;
+	font-weight: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+@media screen and (max-width: 45em) {
+    h1 {
+    	font-size: 25px;
+    }
+}
+
+
+/* CITATION */
+
+.playCitation {
+	color: #dd9bf8;
+	font-size: 1.43em;
+	font-family: 'Comfortaa', cursive;
+}
+
+@media screen and (max-width: 45em) {
+    .playCitation {
+	font-size: 1.2em;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin-top: 45px;
+}
+
+/* RUBRIQUES CHOIX DU THEME et DU NOMBRE */
+
+label {
+	color: #b49eef;
+	font-size: 1.1em;
+	font-family: open sans;
+}
+
+h2 {
+	color: #b49eef;
+	font-size: 1.1em;
+	font-family: open sans;
+}
+
+/* STYLE BOUTON RADIO
+
+/* Masquer le bouton radio d'origine */ 
+input[type=radio]{
+  display: none;
+}
+
+/* Affichage sans clic du nouveau bouton radio */
+input[type=radio] + label:before {
+  background: #94fff5;
+  border: 1px solid #ccc;
+  border-radius: 20%;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  width: 17px;
+  height: 17px;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+/* Affichage du nouveau bouton radio après clic */
+input[type=radio]:checked + label:before {
+  background: #f18568;
+  box-shadow: inset 0px 0px 0px 2px #fff;
+  border-radius: 30%;
+}
+
+label{
+  cursor:pointer;
+}
+
+/* FIN STYLE BOUTON RADIO */
+
+/* BLOCS BOUTONS */
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.bloc-theme {
+	margin-right: 80px;
+	margin-left: 50px;
+}
+
+.bloc-nombre {
+	margin-left: 80px;
+	margin-right: 50px;
+}
+
+@media screen and (max-width: 45em) {
+    .container {
+        display: flex;
+		justify-content: center;
+		flex-direction: column;
+    }
+
+    .bloc-theme {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 80px;
+	}
+
+    .bloc-nombre {
+    	display: flex;
+		justify-content: center;
+		flex-direction: column;
+    }
+}
+
+/* BLOC DU BOUTON ET DE LA CITATION */
+.container-2 {
+	margin-top : 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* BOUTON DE GÉNÉRATION ET DE SUPPRESSION */
+.button {
+	text-align: center;
+	font-family: open sans;
+	font-size: 1em;
+	color: #4e0980;
+	background-color: #94fff5;
+	outline-style: none;
+	border-radius: 1.5em;
+	border-color: white;
+	padding: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Au passage de la souris */
+.button:hover {
+	cursor: pointer;
+	font-size: 0.98em;
+	color: #3c0663;
+	background-color: #f3edff;
+	border-radius: 1.9em;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+/* BOUTON DE SUPPRESSION CACHÉ*/
+
+.buttonDelete {
+	display: none;
+	margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+	margin-top: 100px;
+	position: fixed-bottom;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 1px solid #0bf6e1;
+}
+
+#text-footer {
+	color: #b49eef;
+	font-size: 0.75em;
+	font-family: open sans;
+	text-align: center;
+}
+
+a {
+	color: #b49eef;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #f18568;
+	font-size: 1.04em;
+}
